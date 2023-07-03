@@ -1,7 +1,7 @@
 using Solutions._0001___Two_Sum;
 using Solutions._0013___Roman_to_Integer;
 using Solutions._0014___Longest_Common_Prefix;
-using Solutions._0020__Valid_Parentheses;
+using Solutions._0020___Valid_Parentheses;
 
 namespace Solutions;
 

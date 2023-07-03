@@ -1,4 +1,4 @@
-namespace Solutions._0020__Valid_Parentheses;
+namespace Solutions._0020___Valid_Parentheses;
 
 class TestParameter
 {
