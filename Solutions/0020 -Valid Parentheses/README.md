@@ -50,15 +50,52 @@ s consists of parentheses only '()[]{}'.
 ## My Solution
 
 ```cs
-public bool IsValid(string s)
-{
-    
-}
+
+    public bool IsValid(string s)
+    {
+        if (s.Length == 0) return false;
+        if (s.Length % 2 != 0) return false;
+
+        var stack = new Stack<char>();
+
+        foreach (var c in s)
+        {
+            if (c == '(' || c == '[' || c == '{')
+            {
+                stack.Push(c);
+            }
+            else
+            {
+                if (stack.Count == 0)
+                {
+                    return false;
+                }
+
+                var top = stack.Pop();
+                if (c == ')' && top != '(')
+                {
+                    return false;
+                }
+
+                if (c == ']' && top != '[')
+                {
+                    return false;
+                }
+
+                if (c == '}' && top != '{')
+                {
+                    return false;
+                }
+            }
+        }
+
+        return stack.Count <= 0;
+    }
 ```
 
 ## Complexity
 
-Time Complexity: 
+Time Complexity: O(n)
 
-Space Complexity: O
+Space Complexity: O(n)
 
