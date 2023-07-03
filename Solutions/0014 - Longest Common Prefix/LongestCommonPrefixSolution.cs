@@ -14,7 +14,8 @@ class TestParameter
 
 public class LongestCommonPrefixSolution : Solution
 {
-    public bool Test()
+    public SolutionType SolutionType => SolutionType.LongestCommonPrefix;
+    public bool Test(bool printTests = true)
     {
         var testCases = new List<TestParameter>()
         {
@@ -34,11 +35,13 @@ public class LongestCommonPrefixSolution : Solution
             var result = LongestCommonPrefix(c.input);
             if (c.answer.Equals(result))
             {
-                Console.WriteLine("Test Passed");
+                if (printTests)
+                    Console.WriteLine("Test Passed");
                 continue;
             }
 
-            Console.WriteLine("Test Failed");
+            if (printTests)
+                Console.WriteLine("Test Failed");
             testPassed = false;
         }
 
@@ -49,17 +52,24 @@ public class LongestCommonPrefixSolution : Solution
 
     public string LongestCommonPrefix(string[] strs)
     {
-        if (strs.Length == 0) return "";
+        if (strs.Length == 0)
+            return "";
+
         var prefix = "";
         var first = strs[0];
+        var fLength = first.Length;
+        var totalStrs = strs.Length;
 
-        for (var i = 0; i < first.Length; i++)
+        for (var i = 0; i < fLength; i++)
         {
             var c = first[i];
-            for (var j = 1; j < strs.Length; j++)
+
+            for (var j = 1; j < totalStrs; j++)
             {
-                if (strs[j].Length == i) return prefix;
-                if (strs[j][i] != c) return prefix;
+                var str = strs[j];
+
+                if (str.Length == i || str[i] != c)
+                    return prefix;
             }
 
             prefix += c;

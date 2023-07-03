@@ -16,7 +16,9 @@ class TestParameter
 
 public class TwoSumSolution : Solution
 {
-    public bool Test()
+    public SolutionType SolutionType => SolutionType.TwoSum;
+
+    public bool Test(bool printTests = true)
     {
         var testCases = new List<TestParameter>()
         {
@@ -32,11 +34,13 @@ public class TwoSumSolution : Solution
 
             if (c.answer.SequenceEqual(result))
             {
-                Console.WriteLine("Test Passed");
+                if (printTests)
+                    Console.WriteLine("Test Passed");
                 continue;
             }
 
-            Console.WriteLine("Test Failed");
+            if (printTests)
+                Console.WriteLine("Test Failed");
             testPassed = false;
         }
 
