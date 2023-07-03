@@ -1,0 +1,15 @@
+/Users/ardaerbaharli/LeetCodeSolutions/Solutions/bin/Debug/net6.0/Solutions
+/Users/ardaerbaharli/LeetCodeSolutions/Solutions/bin/Debug/net6.0/Solutions.deps.json
+/Users/ardaerbaharli/LeetCodeSolutions/Solutions/bin/Debug/net6.0/Solutions.runtimeconfig.json
+/Users/ardaerbaharli/LeetCodeSolutions/Solutions/bin/Debug/net6.0/Solutions.dll
+/Users/ardaerbaharli/LeetCodeSolutions/Solutions/bin/Debug/net6.0/ref/Solutions.dll
+/Users/ardaerbaharli/LeetCodeSolutions/Solutions/bin/Debug/net6.0/Solutions.pdb
+/Users/ardaerbaharli/LeetCodeSolutions/Solutions/obj/Debug/net6.0/Solutions.csproj.AssemblyReference.cache
+/Users/ardaerbaharli/LeetCodeSolutions/Solutions/obj/Debug/net6.0/Solutions.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ardaerbaharli/LeetCodeSolutions/Solutions/obj/Debug/net6.0/Solutions.AssemblyInfoInputs.cache
+/Users/ardaerbaharli/LeetCodeSolutions/Solutions/obj/Debug/net6.0/Solutions.AssemblyInfo.cs
+/Users/ardaerbaharli/LeetCodeSolutions/Solutions/obj/Debug/net6.0/Solutions.csproj.CoreCompileInputs.cache
+/Users/ardaerbaharli/LeetCodeSolutions/Solutions/obj/Debug/net6.0/Solutions.dll
+/Users/ardaerbaharli/LeetCodeSolutions/Solutions/obj/Debug/net6.0/ref/Solutions.dll
+/Users/ardaerbaharli/LeetCodeSolutions/Solutions/obj/Debug/net6.0/Solutions.pdb
+/Users/ardaerbaharli/LeetCodeSolutions/Solutions/obj/Debug/net6.0/Solutions.genruntimeconfig.cache
